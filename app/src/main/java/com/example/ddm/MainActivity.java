@@ -55,5 +55,13 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        Button btnListagem = findViewById(R.id.btnListagem);
+        btnListagem.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, ListagemPersonalizada.class);
+                startActivity(intent);
+            }
+        });
     }
 }
