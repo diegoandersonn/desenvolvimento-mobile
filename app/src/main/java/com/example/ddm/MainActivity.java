@@ -47,5 +47,13 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        Button btnLista = findViewById(R.id.btnLista);
+        btnLista.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, ListaViewGroup.class);
+                startActivity(intent);
+            }
+        });
     }
 }

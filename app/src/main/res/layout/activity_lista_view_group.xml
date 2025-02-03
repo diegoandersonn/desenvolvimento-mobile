@@ -5,54 +5,46 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".ListaViewGroup">
 
     <Button
-        android:id="@+id/btnSorteio"
+        android:id="@+id/backBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:width="100dp"
-        android:text="Sorteio"
-        app:layout_constraintBottom_toTopOf="@+id/btnConversor"
+        android:layout_margin="16dp"
+        android:text="Voltar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/ex3Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ex 3"
+        app:layout_constraintBottom_toTopOf="@+id/ex6Btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btnConversor"
+        android:id="@+id/ex6Btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:width="100dp"
-        android:text="Conversor"
-        android:textSize="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/btnMensagem"
+        android:text="Ex 6"
+        app:layout_constraintBottom_toTopOf="@+id/ex8Btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnSorteio" />
+        app:layout_constraintTop_toBottomOf="@+id/ex3Btn" />
 
     <Button
-        android:id="@+id/btnMensagem"
+        android:id="@+id/ex8Btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:width="100dp"
-        android:text="Mensagem Entre Activites"
-        android:textSize="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/btnLista"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnConversor" />
-
-    <Button
-        android:id="@+id/btnLista"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:width="100dp"
-        android:text="Lista View Group"
-        android:textSize="10dp"
+        android:text="Ex 8"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnMensagem" />
+        app:layout_constraintTop_toBottomOf="@+id/ex6Btn" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

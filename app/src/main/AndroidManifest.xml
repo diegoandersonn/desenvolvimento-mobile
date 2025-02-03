@@ -13,6 +13,18 @@
         android:theme="@style/Theme.DDM"
         tools:targetApi="31">
         <activity
+            android:name=".Paint"
+            android:exported="false" />
+        <activity
+            android:name=".Ex8ListaVG"
+            android:exported="false" />
+        <activity
+            android:name=".Ex6ListaVG"
+            android:exported="false" />
+        <activity
+            android:name=".Ex3ListaVG"
+            android:exported="false" />
+        <activity
             android:name=".ListaViewGroup"
             android:exported="false" />
         <activity
