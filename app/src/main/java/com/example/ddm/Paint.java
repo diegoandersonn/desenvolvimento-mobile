@@ -37,12 +37,14 @@ public class Paint extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
         colorBtn = findViewById(R.id.paintBtn);
         colorBtn.setOnClickListener(view -> {
             openColorPicker();
         });
-        clearBtn = findViewById(R.id.clearBtn);
+
         simplePaint = findViewById(R.id.simplePaint);
+        clearBtn = findViewById(R.id.clearBtn);
         clearBtn.setOnClickListener( view -> {
             simplePaint.clearDrawing();
         });
@@ -51,23 +53,20 @@ public class Paint extends AppCompatActivity {
         new ColorPickerDialog.Builder(Paint.this)
                 .setTitle("ColorPicker Dialog")
                 .setPreferenceName("MyColorPickerDialog")
-                .setPositiveButton("CONFIRM",
+                .setPositiveButton("Confirmar",
                         new ColorEnvelopeListener() {
                             @Override
                             public void onColorSelected(ColorEnvelope envelope, boolean fromUser) {
                                 setColor(envelope);
                             }
                         })
-                .setNegativeButton("CANCEL",
+                .setNegativeButton("Cancelar",
                         new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialogInterface, int i) {
                                 dialogInterface.dismiss();
                             }
                         })
-                .attachAlphaSlideBar(true)
-                .attachBrightnessSlideBar(true)
-                .setBottomSpace(12)
                 .show();
     }
     public void setColor(ColorEnvelope envelope){

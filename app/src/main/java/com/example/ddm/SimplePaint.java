@@ -20,10 +20,8 @@ public class SimplePaint extends View {
         super(context, attrs);
         myPaint = new Paint();
         myPath = new Path();
-
         myPaint.setColor(Color.BLACK);
         myPaint.setStrokeWidth(15);
-        myPaint.setAntiAlias(true);
         myPaint.setStyle(Paint.Style.STROKE);
     }
 
