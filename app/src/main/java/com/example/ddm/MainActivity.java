@@ -71,5 +71,13 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        Button btnPaint = findViewById(R.id.btnPaint);
+        btnPaint.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, Paint.class);
+                startActivity(intent);
+            }
+        });
     }
 }

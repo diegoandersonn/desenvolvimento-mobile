@@ -14,7 +14,6 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class ListagemPersonalizada extends AppCompatActivity {
 
@@ -28,7 +27,7 @@ public class ListagemPersonalizada extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        ArrayList<Jogador> jogadores = new ArrayList<Jogador>();
+        ArrayList<Jogador> jogadores = new ArrayList< >();
         jogadores.add(new Jogador("Calleri", "São Paulo", 31));
         jogadores.add(new Jogador("Lucas Moura", "São Paulo", 33));
         jogadores.add(new Jogador("Oscar", "São Paulo", 35));
