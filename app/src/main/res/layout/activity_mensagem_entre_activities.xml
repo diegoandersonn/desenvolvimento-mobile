@@ -5,42 +5,39 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MensagemEntreActivities">
 
     <Button
-        android:id="@+id/btnSorteio"
+        android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sorteio"
-        android:width="100dp"
-        app:layout_constraintBottom_toTopOf="@+id/btnConversor"
+        android:text="Enviar"
+        android:layout_margin="16dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/edText"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btnConversor"
+        android:id="@+id/backBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Conversor"
-        android:textSize="10dp"
-        android:width="100dp"
-        app:layout_constraintBottom_toTopOf="@+id/btnMensagem"
+        android:text="Voltar"
+        android:layout_margin="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnSorteio" />
+        app:layout_constraintTop_toBottomOf="@+id/edText" />
 
-    <Button
-        android:id="@+id/btnMensagem"
+    <EditText
+        android:id="@+id/edText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Mensagem Entre Activites"
-        android:textSize="10dp"
-        android:width="100dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Insira o texto"
+        android:inputType="text"
+        app:layout_constraintEnd_toStartOf="@+id/button"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnConversor" />
-
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
