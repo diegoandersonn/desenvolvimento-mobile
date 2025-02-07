@@ -13,6 +13,9 @@
         android:theme="@style/Theme.DDM"
         tools:targetApi="31">
         <activity
+            android:name=".AtivLauncher"
+            android:exported="false" />
+        <activity
             android:name=".AtivSensor"
             android:exported="false" />
         <activity
